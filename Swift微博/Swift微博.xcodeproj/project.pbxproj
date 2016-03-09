@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		515F1C021C904EB100FA92B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F1C011C904EB100FA92B5 /* AppDelegate.swift */; };
-		515F1C041C904EB100FA92B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F1C031C904EB100FA92B5 /* ViewController.swift */; };
 		515F1C091C904EB100FA92B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515F1C081C904EB100FA92B5 /* Assets.xcassets */; };
+		515F1C221C90596B00FA92B5 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F1C211C90596B00FA92B5 /* MainTableViewController.swift */; };
+		515F1C241C90599400FA92B5 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F1C231C90599400FA92B5 /* DiscoverTableViewController.swift */; };
+		515F1C261C9059A500FA92B5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F1C251C9059A500FA92B5 /* HomeTableViewController.swift */; };
+		515F1C281C9059CD00FA92B5 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F1C271C9059CD00FA92B5 /* MessageTableViewController.swift */; };
+		515F1C2A1C9059D900FA92B5 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F1C291C9059D900FA92B5 /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		515F1BFE1C904EB100FA92B5 /* Swift微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		515F1C011C904EB100FA92B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		515F1C031C904EB100FA92B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		515F1C081C904EB100FA92B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515F1C0D1C904EB100FA92B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515F1C211C90596B00FA92B5 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		515F1C231C90599400FA92B5 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		515F1C251C9059A500FA92B5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		515F1C271C9059CD00FA92B5 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		515F1C291C9059D900FA92B5 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +58,88 @@
 		515F1C001C904EB100FA92B5 /* Swift微博 */ = {
 			isa = PBXGroup;
 			children = (
+				515F1C151C90589700FA92B5 /* Classes */,
 				515F1C011C904EB100FA92B5 /* AppDelegate.swift */,
-				515F1C031C904EB100FA92B5 /* ViewController.swift */,
 				515F1C081C904EB100FA92B5 /* Assets.xcassets */,
 				515F1C0D1C904EB100FA92B5 /* Info.plist */,
 			);
 			path = "Swift微博";
+			sourceTree = "<group>";
+		};
+		515F1C151C90589700FA92B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				515F1C161C90589700FA92B5 /* Model(模型) */,
+				515F1C171C90589700FA92B5 /* Module(功能模块) */,
+				515F1C201C90589700FA92B5 /* Tools(工具) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		515F1C161C90589700FA92B5 /* Model(模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model(模型)";
+			sourceTree = "<group>";
+		};
+		515F1C171C90589700FA92B5 /* Module(功能模块) */ = {
+			isa = PBXGroup;
+			children = (
+				515F1C1A1C90589700FA92B5 /* Main(主要) */,
+				515F1C181C90589700FA92B5 /* Discover(发现) */,
+				515F1C191C90589700FA92B5 /* Home(家) */,
+				515F1C1E1C90589700FA92B5 /* Message(信息) */,
+				515F1C1F1C90589700FA92B5 /* Profile(文件) */,
+			);
+			path = "Module(功能模块)";
+			sourceTree = "<group>";
+		};
+		515F1C181C90589700FA92B5 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				515F1C231C90599400FA92B5 /* DiscoverTableViewController.swift */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		515F1C191C90589700FA92B5 /* Home(家) */ = {
+			isa = PBXGroup;
+			children = (
+				515F1C251C9059A500FA92B5 /* HomeTableViewController.swift */,
+			);
+			path = "Home(家)";
+			sourceTree = "<group>";
+		};
+		515F1C1A1C90589700FA92B5 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				515F1C211C90596B00FA92B5 /* MainTableViewController.swift */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		515F1C1E1C90589700FA92B5 /* Message(信息) */ = {
+			isa = PBXGroup;
+			children = (
+				515F1C271C9059CD00FA92B5 /* MessageTableViewController.swift */,
+			);
+			path = "Message(信息)";
+			sourceTree = "<group>";
+		};
+		515F1C1F1C90589700FA92B5 /* Profile(文件) */ = {
+			isa = PBXGroup;
+			children = (
+				515F1C291C9059D900FA92B5 /* ProfileTableViewController.swift */,
+			);
+			path = "Profile(文件)";
+			sourceTree = "<group>";
+		};
+		515F1C201C90589700FA92B5 /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tools(工具)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				515F1C041C904EB100FA92B5 /* ViewController.swift in Sources */,
+				515F1C2A1C9059D900FA92B5 /* ProfileTableViewController.swift in Sources */,
+				515F1C261C9059A500FA92B5 /* HomeTableViewController.swift in Sources */,
+				515F1C221C90596B00FA92B5 /* MainTableViewController.swift in Sources */,
+				515F1C281C9059CD00FA92B5 /* MessageTableViewController.swift in Sources */,
+				515F1C241C90599400FA92B5 /* DiscoverTableViewController.swift in Sources */,
 				515F1C021C904EB100FA92B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
