@@ -87,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				515F1C1A1C90589700FA92B5 /* Main(主要) */,
-				515F1C181C90589700FA92B5 /* Discover(发现) */,
 				515F1C191C90589700FA92B5 /* Home(家) */,
+				515F1C181C90589700FA92B5 /* Discover(发现) */,
 				515F1C1E1C90589700FA92B5 /* Message(信息) */,
 				515F1C1F1C90589700FA92B5 /* Profile(文件) */,
 			);
